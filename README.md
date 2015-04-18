@@ -16,15 +16,11 @@ https://developers.jins.com/ja/sdks/ios/
 
 2, プロジェクトの Embedded Binarys に MEMELib.framework を追加する
 
-3, 下記のフレームワークを追加
-
-* CoreBluetooth.framework 
-
-4, Uses Bluetooth LE accessories設定をする
+3, Uses Bluetooth LE accessories設定をする
 
 ターゲット設定 Capabilities -> Backend Modes の Uses Bluetooth LE accessories にチェックを入れる
 
-5, BridgingHeader を利用する
+4, BridgingHeader を利用する
 
 プロジェクト ${ProductModuleName}-Bridging-Header.h ファイルを追加
 ```
@@ -33,14 +29,14 @@ https://developers.jins.com/ja/sdks/ios/
 //JINS MEM Lib を インポート
 #import <MEMELib/MEMELib.h>
 ```
-6, AppDelegate  didFinishLaunchingWithOptions に MEMELibアプリ認証とSDK認証を行うコードを追加
+5, AppDelegate  didFinishLaunchingWithOptions に MEMELibアプリ認証とSDK認証を行うコードを追加
 
 ```
 例) //MEME Lib を初期化
 MEMELib.setAppClientId(JINS_MEME_APP_ID,clientSecret:JINS_MEME_CLIENT_SECRET);
 ```
 
-7, ViewController viewDidLoad に MEMELib初期設定コードを追加
+6, ViewController viewDidLoad に MEMELib初期設定コードを追加
 ```
 ViewController に MEMELibDelegate 追加
 
