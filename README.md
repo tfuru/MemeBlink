@@ -26,7 +26,7 @@ Swift で JINS MEME SDK 使うサンプルと 手順を書いたメモ
 * CoreGraphics.framework 
 * CoreBluetooth.framework 
 * Foundation.framework
-* UIKit.framework 
+* UIKit.framework
 * XCTest.framework
 
 3. ターゲット設定 Capabilities -> Backend Modes の Uses Bluetooth LE accessories にチェックを入れる
