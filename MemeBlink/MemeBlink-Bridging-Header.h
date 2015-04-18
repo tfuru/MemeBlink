@@ -14,7 +14,6 @@
 
 //アプリID
 #define JINS_MEME_APP_ID @""
-
 //アプリSecret
 #define JINS_MEME_CLIENT_SECRET @""
 

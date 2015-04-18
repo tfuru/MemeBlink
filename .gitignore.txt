@@ -31,3 +31,6 @@ Pods/
 Carthage/Checkouts
 
 Carthage/Build
+
+#MEMELib.framework 
+MemeBlink/MEME/MEMELib.framework

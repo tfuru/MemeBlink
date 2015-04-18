@@ -88,7 +88,7 @@ class ViewController: UIViewController,MEMELibDelegate {
         println("memeRealTimeModeDataReceived \(data)");
         
         //まばたきの強さを検知したら瞬き回数を加算
-        // : MEMERealTimeData のパラメータについては SDK同封の api_ios_meme_realtime_data.html 等を参照
+        // MEMERealTimeData のパラメータについては SDK同封の api_ios_meme_realtime_data.html 等を参照
         if data.blinkStrength > 0 {
             self.blinkCnt++;
             lblBlinkCnt.text = String(format:"%d",self.blinkCnt);

@@ -15,20 +15,6 @@
 		45F53DA61AE1FE1300B36032 /* MemeBlinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F53DA51AE1FE1300B36032 /* MemeBlinkTests.swift */; };
 		45F53DB31AE2001300B36032 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DB21AE2001300B36032 /* MEMELib.framework */; };
 		45F53DB41AE2001300B36032 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DB21AE2001300B36032 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		45F53DB91AE201FC00B36032 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DB81AE201FC00B36032 /* AdSupport.framework */; };
-		45F53DBB1AE2020F00B36032 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DBA1AE2020F00B36032 /* CoreLocation.framework */; };
-		45F53DBD1AE2022600B36032 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DBC1AE2022600B36032 /* CFNetwork.framework */; };
-		45F53DBF1AE2023500B36032 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DBE1AE2023500B36032 /* MobileCoreServices.framework */; };
-		45F53DC11AE2024500B36032 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DC01AE2024500B36032 /* StoreKit.framework */; };
-		45F53DC31AE2025500B36032 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DC21AE2025500B36032 /* SystemConfiguration.framework */; };
-		45F53DC51AE2026100B36032 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DC41AE2026100B36032 /* Accounts.framework */; };
-		45F53DC71AE2027100B36032 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DC61AE2027100B36032 /* Security.framework */; };
-		45F53DC91AE2029B00B36032 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DC81AE2029B00B36032 /* Social.framework */; };
-		45F53DCB1AE202A900B36032 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DCA1AE202A900B36032 /* AudioToolbox.framework */; };
-		45F53DCC1AE202C600B36032 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DB61AE200E000B36032 /* CoreGraphics.framework */; };
-		45F53DCE1AE202D000B36032 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DCD1AE202D000B36032 /* CoreBluetooth.framework */; };
-		45F53DD01AE202DE00B36032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DCF1AE202DE00B36032 /* Foundation.framework */; };
-		45F53DD21AE2030200B36032 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53DD11AE2030200B36032 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,20 +54,6 @@
 		45F53DA51AE1FE1300B36032 /* MemeBlinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeBlinkTests.swift; sourceTree = "<group>"; };
 		45F53DAF1AE1FEA400B36032 /* MemeBlink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemeBlink-Bridging-Header.h"; sourceTree = "<group>"; };
 		45F53DB21AE2001300B36032 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEMELib.framework; path = MemeBlink/MEME/MEMELib.framework; sourceTree = "<group>"; };
-		45F53DB61AE200E000B36032 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		45F53DB81AE201FC00B36032 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		45F53DBA1AE2020F00B36032 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		45F53DBC1AE2022600B36032 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		45F53DBE1AE2023500B36032 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		45F53DC01AE2024500B36032 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		45F53DC21AE2025500B36032 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		45F53DC41AE2026100B36032 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		45F53DC61AE2027100B36032 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		45F53DC81AE2029B00B36032 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		45F53DCA1AE202A900B36032 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		45F53DCD1AE202D000B36032 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		45F53DCF1AE202DE00B36032 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45F53DD11AE2030200B36032 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,20 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F53DD21AE2030200B36032 /* UIKit.framework in Frameworks */,
-				45F53DD01AE202DE00B36032 /* Foundation.framework in Frameworks */,
-				45F53DCE1AE202D000B36032 /* CoreBluetooth.framework in Frameworks */,
-				45F53DCC1AE202C600B36032 /* CoreGraphics.framework in Frameworks */,
-				45F53DBD1AE2022600B36032 /* CFNetwork.framework in Frameworks */,
-				45F53DCB1AE202A900B36032 /* AudioToolbox.framework in Frameworks */,
-				45F53DC91AE2029B00B36032 /* Social.framework in Frameworks */,
-				45F53DBB1AE2020F00B36032 /* CoreLocation.framework in Frameworks */,
-				45F53DC71AE2027100B36032 /* Security.framework in Frameworks */,
-				45F53DC51AE2026100B36032 /* Accounts.framework in Frameworks */,
-				45F53DC31AE2025500B36032 /* SystemConfiguration.framework in Frameworks */,
-				45F53DC11AE2024500B36032 /* StoreKit.framework in Frameworks */,
-				45F53DBF1AE2023500B36032 /* MobileCoreServices.framework in Frameworks */,
-				45F53DB91AE201FC00B36032 /* AdSupport.framework in Frameworks */,
 				45F53DB31AE2001300B36032 /* MEMELib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				45F53DAF1AE1FEA400B36032 /* MemeBlink-Bridging-Header.h */,
-				45F53DD31AE2162700B36032 /* Framework */,
 				45F53D8F1AE1FE1300B36032 /* AppDelegate.swift */,
 				45F53D911AE1FE1300B36032 /* ViewController.swift */,
 				45F53D931AE1FE1300B36032 /* Main.storyboard */,
@@ -174,27 +131,6 @@
 				45F53DA41AE1FE1300B36032 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		45F53DD31AE2162700B36032 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				45F53DD11AE2030200B36032 /* UIKit.framework */,
-				45F53DCF1AE202DE00B36032 /* Foundation.framework */,
-				45F53DCD1AE202D000B36032 /* CoreBluetooth.framework */,
-				45F53DCA1AE202A900B36032 /* AudioToolbox.framework */,
-				45F53DC81AE2029B00B36032 /* Social.framework */,
-				45F53DC61AE2027100B36032 /* Security.framework */,
-				45F53DC41AE2026100B36032 /* Accounts.framework */,
-				45F53DC21AE2025500B36032 /* SystemConfiguration.framework */,
-				45F53DC01AE2024500B36032 /* StoreKit.framework */,
-				45F53DBE1AE2023500B36032 /* MobileCoreServices.framework */,
-				45F53DBC1AE2022600B36032 /* CFNetwork.framework */,
-				45F53DBA1AE2020F00B36032 /* CoreLocation.framework */,
-				45F53DB81AE201FC00B36032 /* AdSupport.framework */,
-				45F53DB61AE200E000B36032 /* CoreGraphics.framework */,
-			);
-			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +448,7 @@
 				45F53DAB1AE1FE1300B36032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45F53DAC1AE1FE1300B36032 /* Build configuration list for PBXNativeTarget "MemeBlinkTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +457,7 @@
 				45F53DAE1AE1FE1300B36032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
