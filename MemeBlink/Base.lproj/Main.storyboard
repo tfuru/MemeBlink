@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MemeBlink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-Pw-PAH">
+                                <rect key="frame" x="216" y="285" width="169" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="N6R-Aq-uqF"/>
+                                    <constraint firstAttribute="height" constant="30" id="dst-FR-tXE"/>
+                                </constraints>
+                                <state key="normal" title="Find &amp; Connect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnFindAndConnect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1J1-Iz-3mx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejp-Ss-pH7">
+                                <rect key="frame" x="320" y="323" width="65" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="WQD-8j-QeO"/>
+                                    <constraint firstAttribute="height" constant="21" id="pWi-2y-YnF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blink Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7l-yf-hf7">
+                                <rect key="frame" x="216" y="323" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="d1F-qE-KF1"/>
+                                    <constraint firstAttribute="height" constant="21" id="n4d-7e-ZlB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f7l-yf-hf7" firstAttribute="leading" secondItem="YNh-Pw-PAH" secondAttribute="leading" id="0au-cD-pTX"/>
+                            <constraint firstItem="YNh-Pw-PAH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="265" id="Ikb-Bq-sS4"/>
+                            <constraint firstItem="Ejp-Ss-pH7" firstAttribute="leading" secondItem="f7l-yf-hf7" secondAttribute="trailing" constant="8" id="R1L-TC-RDg"/>
+                            <constraint firstAttribute="centerX" secondItem="YNh-Pw-PAH" secondAttribute="centerX" id="kFW-Tg-pOX"/>
+                            <constraint firstItem="f7l-yf-hf7" firstAttribute="top" secondItem="YNh-Pw-PAH" secondAttribute="bottom" constant="8" id="rRu-Xa-o05"/>
+                            <constraint firstItem="Ejp-Ss-pH7" firstAttribute="top" secondItem="YNh-Pw-PAH" secondAttribute="bottom" constant="8" id="zBf-Ra-hN6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnFindAndConnect" destination="YNh-Pw-PAH" id="VRa-CT-UqR"/>
+                        <outlet property="lblBlinkCnt" destination="Ejp-Ss-pH7" id="0K8-Aw-xB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
