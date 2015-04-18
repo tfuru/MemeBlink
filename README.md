@@ -8,9 +8,9 @@ Swift で JINS MEME SDK 使うサンプルと 手順を書いたメモ
 
 ## 手順
 
-1. Embedded Binarys に MEMELib.framework を追加
+1, Embedded Binarys に MEMELib.framework を追加
 
-2. 下記のフレームワークを追加
+2, 下記のフレームワークを追加
 
 * AdSupport.framework
 * CoreLocation.framework 
@@ -27,32 +27,36 @@ Swift で JINS MEME SDK 使うサンプルと 手順を書いたメモ
 * CoreBluetooth.framework 
 * Foundation.framework
 * UIKit.framework
-* XCTest.framework
 
-3. ターゲット設定 Capabilities -> Backend Modes の Uses Bluetooth LE accessories にチェックを入れる
+3, Uses Bluetooth LE accessories設定をする
 
-4. BridgingHeader を利用する
-  プロジェクト ${ProductModuleName}-Bridging-Header.h ファイルを追加
-   
-   #define JINS_MEME_APP_ID @“JINS MEME アプリ登録で発行されるアプリID"
-   #define JINS_MEME_CLIENT_SECRET @“JINS MEME アプリ登録で発行されるアプリSecret"
-   //JINS MEM Lib を インポート
-   #import <MEMELib/MEMELib.h>
+ターゲット設定 Capabilities -> Backend Modes の Uses Bluetooth LE accessories にチェックを入れる
 
-5. AppDelegate  didFinishLaunchingWithOptions に MEMELibアプリ認証とSDK認証を行うコードを追加
+4, BridgingHeader を利用する
 
-  例) //MEME Lib を初期化
-  MEMELib.setAppClientId(JINS_MEME_APP_ID,clientSecret:JINS_MEME_CLIENT_SECRET);
+プロジェクト ${ProductModuleName}-Bridging-Header.h ファイルを追加
+```
+#define JINS_MEME_APP_ID @“JINS MEME アプリ登録で発行されるアプリID"
+#define JINS_MEME_CLIENT_SECRET @“JINS MEME アプリ登録で発行されるアプリSecret"
+//JINS MEM Lib を インポート
+#import <MEMELib/MEMELib.h>
+```
+5, AppDelegate  didFinishLaunchingWithOptions に MEMELibアプリ認証とSDK認証を行うコードを追加
 
-6. ViewController viewDidLoad に MEMELib初期設定コードを追加
+```
+例) //MEME Lib を初期化
+MEMELib.setAppClientId(JINS_MEME_APP_ID,clientSecret:JINS_MEME_CLIENT_SECRET);
+```
 
- ViewController に MEMELibDelegate 追加
+6, ViewController viewDidLoad に MEMELib初期設定コードを追加
+```
+ViewController に MEMELibDelegate 追加
 
- //MEMELib にデリゲート設定
- MEMELib.sharedInstance().delegate = self;
+//MEMELib にデリゲート設定
+MEMELib.sharedInstance().delegate = self;
  
- //centralManagerEnabled プロパティの値の変化を監視
- MEMELib.sharedInstance().addObserver(self,forKeyPath:"centralManagerEnabled",options:.New,context:nil);
+//centralManagerEnabled プロパティの値の変化を監視
+MEMELib.sharedInstance().addObserver(self,forKeyPath:"centralManagerEnabled",options:.New,context:nil);
 
- ….. 以下省略 サンプルプロジェクトを参照してください。
-
+….. 以下省略 サンプルプロジェクトを参照してください。
+```
