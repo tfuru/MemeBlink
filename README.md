@@ -11,6 +11,7 @@ Swift で JINS MEME SDK 使うサンプルと 手順を書いたメモ
 1. Embedded Binarys に MEMELib.framework を追加
 
 2. 下記のフレームワークを追加
+
 * AdSupport.framework
 * CoreLocation.framework 
 * CFNetwork.framework
