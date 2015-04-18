@@ -18,21 +18,7 @@ https://developers.jins.com/ja/sdks/ios/
 
 3, 下記のフレームワークを追加
 
-* AdSupport.framework
-* CoreLocation.framework 
-* CFNetwork.framework
-* MobileCoreServices.framework 
-* StoreKit.framework
-* SystemConfiguration.framework
-* Accounts.framework
-* Security.framework 
-* Social.framework 
-* AudioToolbox.framework 
-* CFNetwork.framework
-* CoreGraphics.framework 
 * CoreBluetooth.framework 
-* Foundation.framework
-* UIKit.framework
 
 4, Uses Bluetooth LE accessories設定をする
 
