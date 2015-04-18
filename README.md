@@ -11,6 +11,7 @@ Swift で JINS MEME SDK 使うサンプルと 手順を書いたメモ
 1, MemeBlink/MEME デレクトリに MEMELib.framework ファイルをコピーする
 
 JINS MEME SDK は下サイトからダウンロードできます。
+
 https://developers.jins.com/ja/sdks/ios/
 
 2, プロジェクトの Embedded Binarys に MEMELib.framework を追加する
